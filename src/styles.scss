@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variable.scss';
+
+p{
+    margin-bottom:0;
+}
+.text-primary{
+    color: $primary-color!important;
+}
+.title{
+    font-size: 2.1rem;
+}
+.text-lg{
+    font-size: 1.6rem;
+}
+.text-normal{
+    font-size: 1rem;
+}
+.CTA-primary{
+    background-color: $secondary-color!important;
+    color: $primary-color!important;
+}

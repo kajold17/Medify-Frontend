@@ -1,0 +1,18 @@
+
+@import '../../variable.scss';
+
+.navbar-brand{
+    img{
+        width: 70%;
+    }
+}
+.navbar-nav{
+    .nav-link{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .nav-link.active{
+        color: $primary-color;
+        border-bottom: 3px solid $primary-color;
+    }
+}
