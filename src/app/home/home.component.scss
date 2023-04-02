@@ -9,7 +9,32 @@ section{
 }
 
 .product-card{
+    margin: 20px 0px;
     .product-image{
         background-color: $secondary-color;
+        height: 300px;
+        object-fit: contain;
     }
 }
+
+.banner-container{
+    position: relative;
+    img{
+        height: 92vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .banner-text{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+        
+}
+
+.tag-line{
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+

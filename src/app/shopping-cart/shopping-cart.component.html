@@ -11,11 +11,12 @@
                     <tr *ngFor="let product of cartProductList">
                         <td>{{product.name}}</td>
                         <td>{{product.num}}
-                            <input type="number" class="form-control" [(ngModel)]="product.num" (ngModelChange)="updateCartItem(product)">
+                            <input type="number" class="form-control" min="0" [(ngModel)]="product.num" (ngModelChange)="modelChanged($event,product)">
                         </td>
-                        <td>{{product.price}}</td>
+                        <td>{{product.price * (product.num ? product.num : 0)}}</td>
                     </tr>
                 </tbody>
+
             </table>
         </div>
     </div>

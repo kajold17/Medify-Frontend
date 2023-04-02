@@ -1,20 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="/assets/images/MEDIFY-LOGO.png" alt="" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<div class="">
+  <nav class="navbar navbar-expand-lg navbar-light flex-nowrap" [ngClass]="isScrolled? 'bg-light':''">
+    <!-- <div class="container "> -->
+    <a class="navbar-brand" routerLink="/home">
+      <img src="/assets/images/MEDIFY-LOGO.png" alt="" />
+    </a>
+    <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="ri-menu-line"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+      <button class="nav-close navbar-toggler my-3 close-icon-btn" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup">
+        <i class="ri-close-line"></i>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link mx-2" routerLinkActive="active" routerLink="/home">Home</a>
-          <a class="nav-link mx-2" routerLinkActive="active" routerLink="/about-us" >About Us</a>
-          <a class="nav-link" routerLinkActive="active" routerLink="/products" >Shop</a>
-          <a class="nav-link" routerLinkActive="active" routerLink="/add-to-cart" ><i class="ri-shopping-cart-line"></i></a>
-          <!-- <a class="nav-link" routerLinkActive="active" routerLink="" >Career</a>
-          <a class="nav-link" routerLinkActive="active" routerLink="" >Contact Us</a> -->
-        </div>
+
+      <div class="navbar-nav">
+        <a class="nav-link mx-2" routerLinkActive="active" routerLink="/home">Home</a>
+        <!-- <a class="nav-link mx-2" routerLinkActive="active" routerLink="/about-us" >About Us</a> -->
+        <a class="nav-link mx-2" routerLinkActive="active" routerLink="/products">Shop</a>
+        <a class="nav-link mx-2" routerLinkActive="active" routerLink="/add-to-cart"><i
+            class="ri-shopping-cart-line"></i></a>
+        <!-- <a class="nav-link" routerLinkActive="active" routerLink="" >Career</a>
+            <a class="nav-link" routerLinkActive="active" routerLink="" >Contact Us</a> -->
       </div>
     </div>
+    <!-- </div> -->
   </nav>
+</div>

@@ -1,18 +1,109 @@
-
 @import '../../variable.scss';
 
-.navbar-brand{
-    img{
-        width: 70%;
-    }
+.navbar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1024;
+  background-color: transparent;
+  padding: 0;
 }
-.navbar-nav{
-    .nav-link{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+
+.navbar-brand {
+  padding: 0;
+
+  img {
+    width: 55%;
+    padding: 10px;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-link.active {
+    color: $primary-color;
+    border-bottom: 3px solid $primary-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar-nav{
+        .nav-link{
+            margin: 0px 18px!important;
+            color: $primary-color;
+            text-align: center;
+        }
+        .nav-link.active{
+            border: 0px;
+            background-color: $secondary-color;
+            color: $primary-color;
+            border-radius: 8px;
+        }
     }
-    .nav-link.active{
+
+    .navbar-toggler:focus{
+        box-shadow: 0 0 0 0!important;
+    }
+    .navbar-toggler{
+        border: 0px;
         color: $primary-color;
-        border-bottom: 3px solid $primary-color;
     }
+  .navbar-collapse.collapse.show {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    width: 300px;
+    max-width: 100%;
+    transition: all .4s ease-in-out;
+    background-color: #fff;
+    z-index: 1200;
+    box-shadow: 3px 0 10px 1px #0000001a;
+    padding: 0;
+  }
+
+  .collapsing {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0px;
+    height: 100vh;
+    max-width: 100%;
+    background-color: #fff !important;
+    transition: all .4s ease-in-out;
+    z-index: 1200;
+    box-shadow: 3px 0 10px 1px rgb(0 0 0 / 10%);
+    padding: 0;
+
+    .nav-close {
+      display: block;
+    }
+  }
+
+  .collapse.show {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    width: 300px;
+    max-width: 100%;
+    transition: all .4s ease-in-out;
+    background-color: #fff !important;
+    z-index: 1000;
+    box-shadow: 3px 0 10px 1px rgb(0 0 0 / 10%);
+    padding: 0;
+
+    .nav-close {
+      display: block;
+    }
+  }
+
 }

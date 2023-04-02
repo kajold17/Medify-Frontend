@@ -13,10 +13,40 @@ p{
 .text-lg{
     font-size: 1.6rem;
 }
+.banner-title{
+    font-size: 5rem;
+    line-height: 5rem;
+}
 .text-normal{
     font-size: 1rem;
 }
-.CTA-primary{
+.CTA-secondary{
     background-color: $secondary-color!important;
     color: $primary-color!important;
+}
+.CTA-primary{
+    background-color: $primary-color!important;
+    color: $secondary-color!important;
+    padding: 14px 40px;
+    border-radius: 50px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pointer{
+    cursor: pointer;
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+
+@media screen and (max-width: 767px){
+    .banner-title{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
 }

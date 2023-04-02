@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  isScrolled: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    window.addEventListener('scroll', this.scroll, true);
+  }
+
+  scroll = (event: any): void => {
+    if (window.pageYOffset > 0) {
+      this.isScrolled = true;
+    } else {
+      this.isScrolled = false;
+    }
   }
 
 }

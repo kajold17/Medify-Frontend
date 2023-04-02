@@ -8,7 +8,6 @@ export class CartService {
 
   cartProductList: Product[] = [];
   product: Product[]=[];
-
   constructor() { }
 
   addToCart(product:Product) {
@@ -23,7 +22,7 @@ export class CartService {
     }
     else{
       productInCart.num = (productInCart.num ?? 0) + 1;
-      productInCart.price = (productInCart.price ?? 0)* productInCart.num,
+      // productInCart.price = (productInCart.price ?? 0),
       console.log("product count", productInCart.num);
       console.log("product price", productInCart.price);
     }
