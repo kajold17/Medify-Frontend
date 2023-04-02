@@ -1,12 +1,12 @@
 <section class="container">
     <p class="text-lg text-center">Our Products</p>
-    <div class="row mx-0">
-        <div class="col-md-4" *ngFor="let p of products">
+    <div class="row mx-0" infinite-scroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="100" (scrolled)="onScroll()">
+        <div class="col-md-4" *ngFor="let p of product">
             <div class="product-card">
                 <img src="/assets/images/medicine-1.png" alt="" class="w-100 product-image">
-                <p class="text-primary text-lg mt-2">Multivitamin</p>
+                <p class="text-primary text-lg mt-2">{{p.name}}</p>
                 <div class="d-flex justify-content-between align-items-center my-2">
-                  <button class="btn CTA-primary text-normal">Add to cart</button>
+                  <button class="btn CTA-primary text-normal" (click)="addToCart(p)">Add to cart</button>
                   <p class="text-primary text-lg">$45</p>
                 </div>
               </div>

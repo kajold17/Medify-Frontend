@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductsComponent } from './products/products.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { ProductsComponent } from './products/products.component';
     NavbarComponent,
     HomeComponent,
     AboutUsComponent,
-    ProductsComponent
+    ProductsComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InfiniteScrollModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
