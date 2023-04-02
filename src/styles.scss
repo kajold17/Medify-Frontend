@@ -34,6 +34,16 @@ p{
     justify-content: center;
     align-items: center;
 }
+.CTA-primary-normal{
+    background-color: $primary-color!important;
+    color: $secondary-color!important;
+    padding: 14px 40px;
+    border-radius: 50px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .pointer{
     cursor: pointer;
 }

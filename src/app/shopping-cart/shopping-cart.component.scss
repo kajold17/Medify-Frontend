@@ -1,0 +1,23 @@
+@import "../../variable.scss";
+
+.table-responsive{
+    thead{
+        background-color: $secondary-color;
+        th{
+            color: $primary-color;
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding: 6px 2px;
+        }
+    }
+    td{
+        text-align: center;
+       vertical-align: middle;
+    }
+}
+
+.product-thumbnail-sm{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}

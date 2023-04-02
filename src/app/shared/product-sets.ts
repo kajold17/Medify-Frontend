@@ -7,17 +7,17 @@ export const PRODUCT_SET: Product[] = [
     },
     {
         name: 'Acetaminophen',
-        image: '/assets/images/medicine-1.png',
+        image: '/assets/images/medicine-2.png',
         price: 45
     },
     {
         name: 'Adderall',
-        image: '/assets/images/medicine-1.png',
+        image: '/assets/images/medicine-3.png',
         price: 45
     },
     {
         name: 'Cephalexin',
-        image: '/assets/images/medicine-1.png',
+        image: '/assets/images/medicine-4.png',
         price: 45
     },
     {

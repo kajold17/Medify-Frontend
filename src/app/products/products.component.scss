@@ -4,5 +4,7 @@
     margin: 20px 0px;
     .product-image{
         background-color: $secondary-color;
+        height: 300px;
+        object-fit: contain;
     }
 }

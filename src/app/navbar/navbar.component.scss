@@ -1,11 +1,13 @@
 @import '../../variable.scss';
 
+.nav-container{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1024;
+}
 .navbar {
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1024;
   background-color: transparent;
   padding: 0;
 }
