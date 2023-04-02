@@ -1,6 +1,6 @@
 export interface Product {
     name: string,
     image: any,
-    price: string,
+    price: number,
     num?: number
 }

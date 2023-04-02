@@ -18,4 +18,15 @@ export class ShoppingCartComponent implements OnInit {
     console.log(this.cartProductList);
   }
 
+  updateCartItem(product: Product){
+    const cartProduct = this.cartProductList.find(({ name }) => name === product.name);
+    if (cartProduct) {
+      cartProduct.num = product.num;
+      console.log("quantity updated", cartProduct.num)
+      cartProduct.price =  (cartProduct.price ?? 0)* (cartProduct.num ?? 0); // update the price according to the quantity
+      console.log("price updated", cartProduct.price);
+      // this.cartService.setCartProductList(this.cartProductList);
+    }
+  }
+
 }

@@ -3,17 +3,17 @@
         <div class="table-responsive">
             <table  class="table">
                 <thead>
-                    <th>Sr.No</th>
                     <th>Product Name</th>
                     <th>Quantity</th>
                     <th>Price</th>
                 </thead>
                 <tbody>
                     <tr *ngFor="let product of cartProductList">
-                        <!-- <td>{{}}</td> -->
                         <td>{{product.name}}</td>
-                        <!-- <td>{{product.}}</td> -->
-                        <!-- <td>{{product.}}</td> -->
+                        <td>{{product.num}}
+                            <input type="number" class="form-control" [(ngModel)]="product.num" (ngModelChange)="updateCartItem(product)">
+                        </td>
+                        <td>{{product.price}}</td>
                     </tr>
                 </tbody>
             </table>

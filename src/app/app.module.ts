@@ -9,6 +9,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductsComponent } from './products/products.component';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     BrowserModule,
     AppRoutingModule,
     InfiniteScrollModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

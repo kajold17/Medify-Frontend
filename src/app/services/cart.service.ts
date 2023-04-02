@@ -14,7 +14,7 @@ export class CartService {
   addToCart(product:Product) {
     // console.log("Product list",this.product);
     // console.log("product 2", this.product)
-    const productInCart = this.product.find(({name})=> name === product.name);
+    const productInCart = this.cartProductList.find(({name})=> name === product.name);
     // const productInCart = this.cartProductList.find((p) => p.name === product.name);
     console.log("product being searched for:", product); 
     console.log("cart product",productInCart);
@@ -23,7 +23,9 @@ export class CartService {
     }
     else{
       productInCart.num = (productInCart.num ?? 0) + 1;
+      productInCart.price = (productInCart.price ?? 0)* productInCart.num,
       console.log("product count", productInCart.num);
+      console.log("product price", productInCart.price);
     }
     console.log("cart all product",this.cartProductList);
 
